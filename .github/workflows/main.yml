@@ -1,4 +1,4 @@
-name: GitHub Actionsのでも🪧
+name: GitHub Actionsのでも🪧そしてJavaScriptの実行💨
 
 on:
   # developブランチにpushされたら実行
@@ -36,3 +36,25 @@ jobs:
     steps:
       - name: "別れの挨拶をする"
         run: echo "Good Bye!!"
+
+  setup_and_run:
+    runs-on: ubuntu-latest
+    steps:
+      # 👇リポジトリのソースを持ってくる (https://github.com/actions/checkout)
+      - name: リポジトリのチェックアウト
+        uses: actions/checkout@v4
+
+      # 👇Node.jsを使えるようにする (https://github.com/actions/setup-node)
+      - name: Node.jsのセットアップ
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.x'
+          #node-version: 'latest'
+
+      - name: npmイソストール
+        run: npm install
+
+      - name: スクリプト実行💫
+        run: |
+          node --version
+          node index.js

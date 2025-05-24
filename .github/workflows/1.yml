@@ -1,6 +1,6 @@
-name: GitHub Actions Demo
+name: GitHub Actionsのでも🪧
 
-on: 
+on:
   # developブランチにpushされたら実行
   push:
     branches:
@@ -33,6 +33,6 @@ jobs:
   # ジョブは並列で実行される。
   echo_goodbye:
     runs-on: ubuntu-latest
-    steps: 
+    steps:
       - name: "別れの挨拶をする"
         run: echo "Good Bye!!"

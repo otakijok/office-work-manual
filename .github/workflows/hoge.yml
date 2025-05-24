@@ -6,4 +6,9 @@ jobs:
   echo_hello_world:
     runs-on: ubuntu-latest
     steps:
+      # 複数コマンドを実行する。
       - run: echo "Hello World!!🎌"
+      - run: ls -l; pwd
+      - run: echo "Nice to meet you!!"
+      - run: echo "My Name is Taro!!"
+      - run: echo "I love programming!!"

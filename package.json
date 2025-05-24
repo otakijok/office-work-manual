@@ -1,0 +1,19 @@
+{
+  "name": "office-work-manual",
+  "version": "1.0.0",
+  "description": "説明",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/otakijok/office-work-manual.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/otakijok/office-work-manual/issues"
+  },
+  "homepage": "https://github.com/otakijok/office-work-manual#readme"
+}

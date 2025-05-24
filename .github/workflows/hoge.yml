@@ -8,7 +8,20 @@ jobs:
     steps:
       # 複数コマンドを実行する。
       - run: echo "Hello World!!🎌"
-      - run: ls -l; pwd
-      - run: echo "Nice to meet you!!"
-      - run: echo "My Name is Taro!!"
-      - run: echo "I love programming!!"
+
+      - run: ls -ltra; pwd
+
+      - name: "挨拶"
+        run: echo "Nice to meet you!!"
+
+      - name: "名前を言う"
+        run: echo "My Name is Taro!!"
+
+      - name: "趣味を話す"
+        run: echo "I love programming!!"
+
+      - name: "自己紹介"
+        run: |
+          echo "Nice to meet you!!"
+          echo "My Name is Taro!!"
+          echo "I love programming!!"

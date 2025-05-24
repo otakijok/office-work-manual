@@ -25,3 +25,10 @@ jobs:
           echo "Nice to meet you!!"
           echo "My Name is Taro!!"
           echo "I love programming!!"
+
+  # ジョブは並列で実行される。
+  echo_goodbye:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: "別れの挨拶をする"
+        run: echo "Good Bye!!"

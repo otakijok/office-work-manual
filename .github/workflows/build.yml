@@ -1,10 +1,9 @@
 name: GitHub Actionsのでも🪧そしてJavaScriptの実行💨
 
 on:
-  # developブランチにpushされたら実行
   push:
     branches:
-      - develop
+      - main
 
 jobs:
   echo_hello_world:

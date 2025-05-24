@@ -1,6 +1,10 @@
 name: GitHub Actions Demo
 
-on: [push]
+on: 
+  # developブランチにpushされたら実行
+  push:
+    branches:
+      - develop
 
 jobs:
   echo_hello_world:
